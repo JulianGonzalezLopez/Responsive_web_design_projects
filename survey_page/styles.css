@@ -1,0 +1,60 @@
+body{
+    display: grid;
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-areas:
+    "left center right"
+}
+main{
+    grid-area: center;
+    font-size: 18px;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    margin-bottom: 0px;
+}
+#description{
+    margin-top: 0px;
+}
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    height:auto;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+label{
+    justify-content: center;
+}
+input{
+    border-radius:5px;
+}
+select{
+    border-radius:5px;
+}
+textarea{
+    border-radius: 10px;
+    resize: none;
+}
+#submit{
+    height: 50px;
+    background-color: aquamarine;
+    color: white;
+}
+@media only screen and (max-width: 700px)  {
+    body{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-areas:
+        "center"
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey page</title>
+</head>
+<body>
+    <main>    
+        <header>
+            <h1 id="title">Encuesta personal</h1>
+            <p id="description">Buscamos saber mas sobre las personas y sus elecciones en el dia a dia</p>
+        </header>
+        <form id="survey-form" class="tamaño">
+            <label for="name" id="name-label">Nombre completo</label>
+            <input type="text" name="name" id="name" placeholder="Sancho Panza" class="tamaño" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" pattern=".+@gmail.com" class="tamaño" required
+            title="Por favor, solo proporciona una dirección de correo propia del dominio gmail" placeholder="novivesdeensalada@gmail.com">
+            <label for="number"id="number-label">Edad</label>
+            <input type="number" name="number" id="number" min=1 max=100 class="tamaño" placeholder="20">
+            <label for="dropdown" id="dropdown-label">¿Cual es el mejor personaje de League of Legends?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="Ivern">Ivern</option>
+                <option value="Ivern">Ivern</option>
+                <option value="Ivern">Ivern</option>
+                <option value="Ivern">Ivern</option>
+            </select>
+            <p>Selecciona tu comida favorita</p>
+            <label for="pizza"><input type="radio" id="pizza" name="comida-radio" value="pizza">Pizza</label>
+            <label for="empanada"><input type="radio" id="empanada" name="comida-radio" value="empanada">Empanada</label>
+            <label for="arroz"><input type="radio" id="arroz" name="comida-radio" value="arroz">Arroz</label>
+            
+            <p>Selecciona las bebidas que tomes en tu dia a dia</p>
+            <label for="mate"><input type="checkbox" id="mate" value="mate">Mate</label>
+            <label for="agua"><input type="checkbox" id="agua" value="agua">Agua</label>
+            <label for="coca-cola"><input type="checkbox" id="coca-cola" value="coca-cola">Coca-cola</label>
+            
+            <p>¿Tienes algun comentario para nosotros? Escribenos!</p>
+            <textarea name="text-area" id="text-area" cols="30" rows="10"></textarea>
+        </br>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+    
+</body>
+</html>
