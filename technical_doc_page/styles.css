@@ -1,0 +1,135 @@
+
+body{
+    overflow: hidden;
+    
+}
+header{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#header{
+    margin-left: 15px;
+}
+
+#header-img{
+    width: 100%;
+    height: auto;
+}
+hr{
+    border-color: #00233a;
+}
+ul{
+    list-style: none;
+}
+left-list{
+    margin-top: 20px;
+    border-color: black;
+    border: 2px solid black;
+}
+a{
+    text-decoration: none;
+    color:black;
+    width: 100%;
+    font-size: 20px;
+    border-color:black;
+}
+    
+p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main-doc{
+    display: flex;
+    flex-direction: row;
+}
+#navbar{
+    background:white;
+    overflow-y:auto;
+    height: 100vh;
+    width: 30%;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 0;
+    left:0;
+}
+.nav-link{
+    padding-left: 30px;
+}
+#icono-div{
+    display: none;
+}
+#info{
+    background:white;
+    overflow-y:auto;
+    height: 100vh;
+    width: 70%;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    right: 0;
+}
+#info > * {
+    margin-left: 20px;
+}
+@media only screen and (max-width:768px) {
+    #main-doc{
+        display:initial;
+    }
+    #navbar{
+        background: linear-gradient(180deg, #2feef0 0%, #03809a 100%);
+        all:unset;
+        display: flex;
+        flex-direction: column;
+    }
+    #lord-div{
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #links-id{
+        display:none;
+        margin-left: 0px;
+        padding-left:0px;
+        width: 100%;
+        justify-content: center;
+
+    }
+    #links-id ul > *{
+        margin-left: 0px;
+        padding-left:0px;
+        
+    }
+    #links-id ul{
+        overflow-x: auto;
+        margin-left: 0px;
+        padding-left:0px;
+    }
+    #info{
+        overflow-y:auto;
+        position:inherit;
+        overflow-y: visible;
+        overflow-x: initial;
+        z-index: auto;
+        width: 100%;
+        right: initial;
+        top:initial;
+    }
+    #icono-div{
+        display: inline;
+    }
+    #icono-id{
+        height: 50px;
+        width: auto;
+    }
+    body{
+        overflow: auto;
+    }
+}
